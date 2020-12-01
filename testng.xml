@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="2" verbose="1" name="Parallel Test Suite"
+       annotations="JDK" parallel="tests">
+
+    <test name="OpenCartTests">
+        <classes>
+            <class name="org.suiteOne.OpenCartTests"/>
+        </classes>
+    </test>
+
+    <test name="SauceDemoTests">
+        <classes>
+            <class name="org.suiteTwo.SauceDemoTests"/>
+        </classes>
+    </test>
+</suite>
